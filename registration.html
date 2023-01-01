@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+     <!-- Tailwind Link  -->
+     <link href="https://cdn.jsdelivr.net/npm/daisyui@2.46.0/dist/full.css" rel="stylesheet" type="text/css" />
+     <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="flex flex-col mt-40 mx-auto max-w-md p-6 rounded-md sm:p-10 bg-gray-900 text-gray-100">
+        <div class="mb-8 text-center">
+            <h1 class="my-3 text-4xl font-bold">Create an Account</h1>
+           
+            <p class="text-sm text-gray-400">Register to access your account</p>
+        </div>
+        <form novalidate="" action="" class="space-y-12 ng-untouched ng-pristine ng-valid">
+            <div class="space-y-4">
+                <div>
+                    <label for="email" class="block mb-2 text-sm">Email address</label>
+                    <input type="email" name="email" id="email" placeholder="leroy@jenkins.com" class="w-full px-3 py-2 border rounded-md border-gray-700 bg-gray-900 text-gray-100">
+                </div>
+                <div>
+                    <div class="flex justify-between mb-2">
+                        <label for="password" class="text-sm">Password</label>
+                        <a rel="noopener noreferrer" href="#" class="text-xs hover:underline text-gray-400">Forgot password?</a>
+                    </div>
+                    <input type="password" name="password" id="password" placeholder="*****" class="w-full px-3 py-2 border rounded-md border-gray-700 bg-gray-900 text-gray-100">
+                </div>
+                <div>
+                    <div class="flex justify-between mb-2">
+                        <label for="password" class="text-sm">Confirm Password</label>
+                        <a rel="noopener noreferrer" href="#" class="text-xs hover:underline text-gray-400">Forgot password?</a>
+                    </div>
+                    <input type="password" name="password" id="password" placeholder="*****" class="w-full px-3 py-2 border rounded-md border-gray-700 bg-gray-900 text-gray-100">
+                </div>
+            </div>
+            <div class="space-y-2">
+                <div>
+                    <button type="button" class="w-full px-8 py-3 font-semibold rounded-md bg-violet-400 text-gray-900">Register</button>
+                </div>
+                <div class="flex justify-between">
+                    <div class="flex items-center">
+                        <input type="checkbox" name="remember" id="remember" aria-label="Remember me" class="mr-1 rounded-sm focus:ring-violet-400 focus:dark:border-violet-400 focus:ring-2 accent-violet-400">
+                        <label for="remember" class="text-sm dark:text-gray-400">I accept the <span class="text-violet-400">Terms & Conditions</span></label>
+                    </div> <br>
+                
+            </div>
+            <p class="px-6 text-sm text-center text-gray-400">Already have an account?
+                <a rel="noopener noreferrer" href="login.html" class="hover:underline text-violet-400">Login here</a>
+            </p>
+        </form>
+    </div>
+</body>
+</html>
